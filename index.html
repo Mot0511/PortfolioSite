@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js">
+
+    </script>
+    <style media="screen">
+      .menu{
+        margin-top: 20px;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+        transition: color 0.5s;
+      }
+      a:hover{
+        color: grey;
+      }
+      .lightBlock{
+        margin-top: 50px;
+        background-color: #F6F6F6;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .pA{
+        margin-top: 50px;
+      }
+      .footer{
+        margin-top: 50px;
+      }
+      .sendBt{
+        width: 180px;
+        height: 42px;
+        background-color: black;
+        color: white;
+        border: 0px;
+        border-radius: 50px;
+        margin-top: 20px;
+        transition: background-color 0.5s;
+      }
+      .sendBt:hover{
+        background-color: grey;
+      }
+      .socials{
+        margin-top: 30px;
+        margin-left: -50px;
+      }
+      .socials img{
+        margin-left: 50px;
+      }
+      .socials p{
+        margin-top: 50px;
+        margin-left: 40px;
+        color: grey;
+      }
+      .menuBt{
+        width: 100px;
+        height: 100px;
+        background-image: url(img/menu.png);
+        border: 0px;
+        background-color: white;
+        position: absolute;
+        right: 140px;
+        top: 50px;
+        display: none;
+      }
+      @media (max-width: 1000px){
+        .menuBt{
+          display: block;
+        }
+        .heading{
+          font-size: 100px;
+        }
+        .bigT{
+          font-size: 35px;
+        }
+        .sendBt{
+          width: 90%;
+          margin-left: 10px;
+          height: 80px;
+          font-size: 30px;
+        }
+        .social{
+          width: 80px;
+          height: auto;
+          margin-top: 30px;
+        }
+        .menu, .menuLine{
+          display: none;
+        }
+      }
+      .mMenu{
+        position: fixed;
+        padding: 50px;
+        background-color: white;
+        width: 100%;
+      }
+      .mMenu a{
+        font-size: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mMenu">
+      <b><a href="index.html">Home</a></b><br>
+      <b><a href="#aboutMe">About me</a></b><br>
+      <b><a href="#skills">Skills</a></b><br>
+      <b><a href="#portfolio">Portfolio</a></b><br>
+      <b><a href="#contacts">Contacts</a></b><br>
+    </div>
+    <div class="container">
+      <div class="row menu">
+        <div class="col-md-2">
+          <b><a href="index.html">Home</a></b>
+        </div>
+        <div class="col-md-2">
+          <b><a href="#aboutMe">About me</a></b>
+        </div>
+        <div class="col-md-2">
+          <b><a href="#skills">Skills</a></b>
+        </div>
+        <div class="col-md-2">
+          <b><a href="#portfolio">Portfolio</a></b>
+        </div>
+        <div class="col-md-2">
+          <b><a href="#contacts">Contacts</a></b>
+        </div>
+
+      </div>
+
+      <hr class="menuLine">
+      <button type="button" class="menuBt" id="menuBt" name="button"></button>
+      <div class="row">
+        <div class="col-lg-6">
+          <br>
+          <h1 class="heading">Denis<br>Novik</h1>
+        </div>
+        <div class="col-lg-6">
+          <br><br><br>
+          <b class="bigT">UI | UX desinger<br>24 years old, Minsk</b>
+        </div>
+      </div>
+      <br><br>
+      <div class="row man">
+        <img src="img/bigMan.png" alt="">
+      </div>
+    </div>
+
+    <div class="lightBlock" id="aboutMe">
+      <center>
+        <h1 class="heading">About me</h1>
+        <p class="bigT">
+Hi, I'm Denis – UX/UI designer from Minsk.<br>
+ I'm interested in design and everything connected with it. <br><br>
+
+ I'm studying at courses "Web and mobile design<br>
+  interfaces" in IT-Academy. <br><br>
+
+  Ready to implement excellent projects <br>
+  with wonderful people.<br><br>
+        </p>
+      </center>
+    </div>
+
+    <br><br>
+    <center>
+      <h1 id="skills" class="heading">Skills</h1><br>
+      <p class="bigT">I work in such programs as</p><br>
+      <br>
+    </center>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <center><img src="img/PS.png" alt="">
+        </div>
+        <div class="col-lg-3">
+          <center><img src="img/ai.png" alt="">
+        </div>
+        <div class="col-lg-3">
+          <center><img src="img/ae.png" alt="">
+        </div>
+        <div class="col-lg-3">
+          <center><img src="img/figma.png" alt="">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="lightBlock">
+      <center><h1 id="portfolio" class="heading">Portfolio</h1></center>
+      <br>
+      <div class="container">
+        <div class="row">
+          <img src="img/p1.png" alt="">
+          <center> <a href="#" class="pA">Online fashion store - Homepage</a> <center>
+          <br><br>
+        </div>
+        <div class="row">
+          <img src="img/p2.png" alt="">
+          <center> <a href="#" class="pA">Reebok Store - Concept</a> <center>
+            <br><br>
+        </div>
+        <div class="row">
+          <img src="img/p3.png" alt="">
+          <center> <a href="#" class="pA">Braun Landing Page - Concept</a> <center>
+            <br><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <center>
+      <h1 id="contacts" class="heading">Contacts</h1>
+      <br>
+      <b class="bigT">Want to know more or just chat?<br>You are welcome!</b><br>
+      <a href="#"> <button type="button" class="sendBt" name="button"> <b>Send message</b></button> </a>
+      <div class="socials">
+        <img src="img/in.png" class="social" alt="">
+        <img src="img/inst.png" class="social" alt="">
+        <img src="img/be.png" class="social" alt="">
+        <img src="img/ball.png" class="social" alt="">
+        <p class="bigT">Like me on<br>LinkedIn, Instagram, Behance, Dribble</p>
+      </div>
+      </center>
+    </div>
+  </body>
+</html>
